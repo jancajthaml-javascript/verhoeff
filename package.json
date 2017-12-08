@@ -1,0 +1,31 @@
+{
+  "name": "verhoeff",
+  "version": "1.0.0",
+  "description": "Verhoeff check-digit",
+  "main": "verhoeff.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "node verhoeff.js"
+  },
+  "contributors": [
+    {
+      "name": "Jan Cajthaml",
+      "email": "jan.cajthaml@gmail.com",
+      "url": "https://github.com/jancajthaml"
+    }
+  ],
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^21.2.1",
+    "jest-junit": "^3.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testResultsProcessor": "jest-junit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jancajthaml-javascript/verhoeff.git"
+  }
+}
