@@ -1,5 +1,5 @@
 test("verhoeff.Digit", async () => {
-  const verhoeff = require("../src/verhoeff.js")
+  const verhoeff = require("../src/index.js")
 
   expect(verhoeff.Digit("75872")).toBe(2)
   expect(verhoeff.Digit("12345")).toBe(1)
@@ -10,7 +10,7 @@ test("verhoeff.Digit", async () => {
 })
 
 test("verhoeff.Validate", async () => {
-  const verhoeff = require("../src/verhoeff.js")
+  const verhoeff = require("../src/index.js")
 
   expect(verhoeff.Validate("84736430954837284567892")).toBe(true)
   expect(verhoeff.Validate("8473643095483728456789")).toBe(false)
@@ -18,7 +18,7 @@ test("verhoeff.Validate", async () => {
 })
 
 test("verhoeff.Generate", async () => {
-  const verhoeff = require("../src/verhoeff.js")
+  const verhoeff = require("../src/index.js")
 
   let generated = verhoeff.Generate("8473643095483728456789")
 
