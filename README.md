@@ -1,7 +1,5 @@
 ## Performant and straight-forward implementation of verhoeff checksum algorithm
 
-[![Go Report Card](https://goreportcard.com/badge/jancajthaml-go/verhoeff)](https://goreportcard.com/report/jancajthaml-go/verhoeff)
-
 ### Usage ###
 
 ```
