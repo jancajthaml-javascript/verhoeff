@@ -6,7 +6,7 @@ test("verhoeff.Digit", async () => {
   expect(verhoeff.Digit("142857")).toBe(0)
   expect(verhoeff.Digit("123456789012")).toBe(0)
   expect(verhoeff.Digit("8473643095483728456789")).toBe(2)
-  expect(verhoeff.Digit("xy-1")).toBe(-1)
+  expect(verhoeff.Digit("xy-1")).toBe(undefined)
 })
 
 test("verhoeff.Validate", async () => {
@@ -24,4 +24,6 @@ test("verhoeff.Generate", async () => {
 
   expect(generated).toBe("84736430954837284567892")
   expect(verhoeff.Validate(generated)).toBe(true)
+
+  expect(verhoeff.Generate("xy-1")).toBe(undefined)
 })

@@ -10,7 +10,7 @@ const Digit = message => {
   while (i--) {
     let d = +message[i]
     if (d != d) {
-      return -1
+      return undefined
     }
     x = mult[x][perm[(++j%8)][d]]
   }
@@ -34,7 +34,10 @@ const Validate = message => {
   return x == 0
 }
 
-const Generate = message => `${message}${Digit(message)}`
+const Generate = message => {
+  let d = Digit(message)
+  return d ? `${message}${d}` : undefined
+}
 
 module.exports = {
   Digit,
